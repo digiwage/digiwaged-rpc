@@ -1,14 +1,14 @@
-qtumd-rpc.js
+digiwaged-rpc.js
 ===============
 
-A client library to connect to QTUM Core RPC in JavaScript.
+A client library to connect to DIGIWAGE Core RPC in JavaScript.
 
 ## Get Started
 
-qtumd-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+digiwaged-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install qtumd-rpc
+npm install digiwaged-rpc
 ```
 
 ## Examples
@@ -16,7 +16,7 @@ npm install qtumd-rpc
 ```javascript
 var run = function() {
   var qtumcore = require('qtumcore');
-  var RpcClient = require('qtumd-rpc');
+  var RpcClient = require('digiwaged-rpc');
 
   var config = {
     protocol: 'http',
