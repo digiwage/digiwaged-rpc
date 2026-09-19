@@ -15,7 +15,6 @@ npm install digiwaged-rpc
 
 ```javascript
 var run = function() {
-  var qtumcore = require('qtumcore');
   var RpcClient = require('digiwaged-rpc');
 
   var config = {
@@ -23,7 +22,7 @@ var run = function() {
     user: 'user',
     pass: 'pass',
     host: '127.0.0.1',
-    port: '18332',
+    port: '34602',
   };
 
   var rpc = new RpcClient(config);
@@ -52,8 +51,7 @@ var run = function() {
         }
 
         rawtxs.map(function (rawtx) {
-          var tx = new qtumcore.Transaction(rawtx.result);
-          console.log('\n\n\n' + tx.id + ':', tx.toObject());
+          console.log('\n\nraw transaction:', rawtx.result);
         });
 
         txids = ret.result;
